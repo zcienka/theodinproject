@@ -1,0 +1,308 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+
+html {
+    background: #28292d;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+
+}
+
+.google {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10em;
+    position: relative;
+    text-align: center;
+
+}
+
+.footer {
+    /*float: right;*/
+    /*padding: 4em 4em;*/
+    /*display: inline-block;*/
+    /*overflow: hidden;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*color: red;*/
+
+    float: right;
+    text-align: right;
+
+    position: absolute;
+    /*bottom: 0;*/
+    width: 100%;
+    height: 100px;
+    /*background: red;*/
+
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 25px 80px;
+    /*margin-left: 30px;*/
+}
+
+.footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.upper_footer_buttons:hover {
+    text-decoration: underline;
+}
+
+
+.user_icon {
+    border-radius: 50%;
+    float: right;
+    padding: 16px 15px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.app_icon {
+    float: right;
+    padding: 19px 16px;
+    height: 25px;
+    width: 25px;
+    filter: invert(100%);
+}
+
+.search_box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 12em;
+    position: relative;
+    text-align: center;
+
+    border-radius: 20px 20px;
+    width: 45em;
+    height: 3em;
+
+}
+
+.search_box:hover {
+    background: dimgray;
+}
+
+.magnifier {
+    float: left;
+    text-align: left;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    filter: invert(100%);
+}
+
+.keyboard {
+    float: right;
+    margin-top: 0.5em;
+    margin-right: 1em;
+}
+
+.buttons {
+
+    display: inline;
+    width: 200px;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    top: 15em;
+}
+
+
+.action_btn {
+    width: 200px;
+    padding: 10px;
+    display: inline;
+    color: #BEBEBE;
+    border-radius: 2px 2px;
+}
+
+
+#buttons:hover {
+    text-decoration: underline;
+}
+
+
+#buttons {
+    background: #484848;
+}
+
+#box {
+    border: 1px solid gray;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bottom_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: #202124;
+}
+
+.line {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 0.09em;
+    background: #28292d;
+}
+
+
+
+.bottom_button {
+    float: left;
+    padding: 1em 2em;
+    color: #BEBEBE;
+}
+
+.bottom_footer_buttons {
+    clear: both;
+    float: left;
+    padding: 0.8em 2em;
+    color: #BEBEBE;
+    margin-top: 2px;
+
+}
+
+.right_bottom_buttons {
+    /*clear: both;*/
+    float: right;
+    padding: 1em 2em;
+    color: #BEBEBE;
+    /*margin-top: 0px;*/
+
+}
+
+.bottom_footer_buttons:hover {
+    text-decoration: underline;
+}
+
+.right_bottom_buttons:hover {
+    text-decoration: underline;
+}
+
+.bottom_button:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
