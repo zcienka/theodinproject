@@ -1,13 +1,106 @@
-<!--<!DOCTYPE html>-->
+<!DOCTYPE html>
 
-<!--<html>-->
+<html>
 
-<!--<head>-->
-<!--    <link rel="stylesheet" href="index.css">-->
-<!--</head>-->
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
 
-<!--<body>-->
+<body>
+<div id="title">
+    <h1>Rock paper scissors</h1>
+</div>
+<div id="title">
+    <p id="message">Make your move 😀</p>
+</div>
 
-<!--</body>-->
+<br>
+<br>
 
-<!--</html>-->
+<div class="choice" id="centered">
+    <div class="container" id="centered">
+
+        <div onclick=rock()>
+            <div class="square" id="margin">
+                <a class="emoji">
+                    <div class="bigger-emoji">
+                        ✊
+                    </div>
+
+                </a>
+            </div>
+        </div>
+
+
+        <div onclick=paper()>
+            <div class="square" id="margin">
+                <a class="emoji">
+                    <div class="bigger-emoji">
+                        🖐
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div onclick=scissors()>
+            <div class="square" id="margin">
+                <a class="emoji">
+                    <div class="bigger-emoji">
+                        ✌
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="choice" id="tag">
+    <div class="user-choice">
+        <div class="square" id="transparent">
+            You
+        </div>
+
+    </div>
+
+    <div class="computer-choice">
+        <div class="square" id="transparent">
+            Computer
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="choice">
+    <!--    <a id="your-choice">You:</a>-->
+    <div class="user-choice">
+        <div class="square">
+            <div class="emoji">
+                <div class="bigger-emoji" id="player">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="computer-choice">
+        <div class="square">
+            <div class="emoji">
+                <div class="bigger-emoji" id="computer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p id="game-result"></p>
+
+<script src="index.js"></script>
+</body>
+
+</html>

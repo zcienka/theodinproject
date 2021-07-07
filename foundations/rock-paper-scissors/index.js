@@ -1,6 +1,8 @@
 const gameList = ["rock", "paper", "scissors"]
-
-
+let playerSelection
+let computer = document.getElementById("computer")
+let player = document.getElementById("player")
+let game_result = document.getElementById("game-result")
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === "rock") {
         if (computerSelection == "rock") {
@@ -27,13 +29,40 @@ function playRound(playerSelection, computerSelection) {
             return "You lose! Scissors beat paper"
         }
     }
-
 }
 
-for (var i = 0; i < 5; i++) {
-    const random = Math.floor(Math.random() * gameList.length)
-    let computerSelection = gameList[random]
+function rock(){
+    playerSelection = "rock"
+    startGame()
+}
 
-    let playerSelection = window.prompt("Choose rock, paper or scissors: ").toLowerCase()
-    console.log(playRound(playerSelection, computerSelection))
+
+function paper(){
+    playerSelection = "paper"
+    startGame()
+}
+
+
+function scissors(){
+    playerSelection = "scissors"
+    startGame()
+}
+
+
+function startGame() {
+        const random = Math.floor(Math.random() * gameList.length)
+        let computerSelection = gameList[random]
+        computer.textContent = textToEmoji(computerSelection)
+        player.textContent = textToEmoji(playerSelection)
+
+        game_result.textContent = playRound(playerSelection, computerSelection)
+}
+
+function textToEmoji(text){
+    if (text === "rock")
+        return "✊"
+    else if (text === "paper")
+        return "🖐"
+    else
+        return "✌"
 }
