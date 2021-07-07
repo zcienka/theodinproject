@@ -52,17 +52,17 @@ function scissors(){
 function startGame() {
         const random = Math.floor(Math.random() * gameList.length)
         let computerSelection = gameList[random]
-        computer.textContent = textToEmoji(computerSelection)
-        player.textContent = textToEmoji(playerSelection)
+        computer.innerHTML = textToEmoji(computerSelection)
+        player.innerHTML = textToEmoji(playerSelection)
 
         game_result.textContent = playRound(playerSelection, computerSelection)
 }
 
 function textToEmoji(text){
     if (text === "rock")
-        return "✊"
+        return "&#128074;"
     else if (text === "paper")
-        return "🖐"
+        return "&#9995;"
     else
-        return "✌"
+        return "&#9996;"
 }
