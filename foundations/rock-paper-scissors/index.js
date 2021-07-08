@@ -62,7 +62,7 @@ function textToEmoji(text){
     if (text === "rock")
         return "&#128074;"
     else if (text === "paper")
-        return "&#9995;"    
+        return "&#9995;"
     else
         return "&#9996;&#65039;"
 }
