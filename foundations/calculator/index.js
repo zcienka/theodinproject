@@ -78,8 +78,6 @@ document.querySelector(".calculator").addEventListener('click', clicked => {
             number = undefined
             curr_num = []
             current_operator = clicked.target.id
-            console.log(calculation)
-            console.log(current_operator)
         }
 
     }
@@ -93,7 +91,6 @@ function displaying_number(num) {
 
 function making_calculations(operator, calculation) {
     let result
-    // for (let i = 0; i < operator.length - 1; i++) {
     if (operator === "\u00f7")
         operator = '/'
     else if (operator === "\u00d7")
