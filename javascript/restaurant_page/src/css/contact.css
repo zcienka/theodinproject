@@ -1,0 +1,56 @@
+
+body {
+    /*background: #252A2F;*/
+    background: #111315;
+    /*background: black;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-container {
+    /*height: 600px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-information {
+    background: #252A2F;
+    width: 1500px;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-information p {
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 350px;
+}
+
+.contact-box {
+    width: 1500px;
+    flex-direction: column;
+    height: 200px;
+    background: #171E24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-box p {
+    font-size: 40px;
+    color: white;
+}
+
+.contact-information iframe {
+    padding: 20px;
+}
+
+table {
+    background: #1D2024;
+    height: 100%;
+}
+
