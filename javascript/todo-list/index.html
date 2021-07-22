@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="header">
+    <h1>Todo list.</h1>
+</header>
+
+<div class="content">
+    <div class="list-of-tasks">
+        <nav>
+            <ul id="added-list-of-tasks">
+<!--                <li onclick=createNewListOfTasks() id="list-of-todo-lists">-->
+<!--                    <img src="img/plus.png" alt="">-->
+<!--                    Add new list-->
+<!--                </li>-->
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="tasks-container">
+        <div class="tasks">
+            <ul>
+                <li>
+                    <h2>Tasks</h2>
+                    <button id="add-new-task">+</button>
+                </li>
+                <div class="line"></div>
+            </ul>
+            <div class="tasks-titles"></div>
+        </div>
+    </div>
+</div>
+
+<div id="new-task-popup" class="background">
+    <div class="popup-window-content">
+        <span class="close" id="new-task-popup-close">&times;</span>
+        <input type="text" id="new-list-title" placeholder="New list">
+        <div class="line"></div>
+        <input type="text" id="due-date" placeholder="Due date" onfocus="(this.type='date')"
+               onblur="(this.type='text')">
+        <div class="line"></div>
+        <textarea id="new-list" placeholder="Add your list"></textarea>
+        <button id="submit">Submit</button>
+    </div>
+</div>
+
+<div id="show-task-details" class="background">
+    <div class="popup-window-content">
+        <span class="close" id="task-details-popup-close">&times;</span>
+        <label for="task-title"></label>
+        <input type="text" id="task-title">
+        <div class="line"></div>
+        <input type="text" id="task-due-date" placeholder="Due date" onfocus="(this.type='date')"
+               onblur="(this.type='text')">
+        <div class="line"></div>
+        <textarea id="task-description"></textarea>
+    </div>
+</div>
+
+<!--<div id="new-list-popup" class="background">-->
+<!--    <div class="popup-window-content">-->
+<!--        <span class="close" id="new-list-popup-close">&times;</span>-->
+<!--        <label for="list-title"></label>-->
+<!--        <input type="text" id="list-title">-->
+<!--        <div class="line"></div>-->
+<!--        <input type="text" id="list-due-date" placeholder="Due date" onfocus="(this.type='date')"-->
+<!--               onblur="(this.type='text')">-->
+<!--        <div class="line"></div>-->
+<!--        <textarea id="list-description"></textarea>-->
+<!--    </div>-->
+<!--</div>-->
+
+<script src="index.js"></script>
+</body>
+</html>
