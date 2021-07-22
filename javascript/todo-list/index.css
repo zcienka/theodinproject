@@ -241,6 +241,7 @@ input:focus {
 
 .tasks-list {
     background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
     border-bottom: 2px solid #AAAEA3;
     padding: 10px;
     padding-left: 35px;
