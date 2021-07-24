@@ -125,7 +125,6 @@ function deleteTask(id) {
 function displayFromLocalStorage() {
     todoTasks = []
     let currentList = localStorageTodos
-    console.log(currentList)
     if (currentList) {
         for (let i = 0; i < currentList.length; i++) {
             displayList(currentList[i], i)
@@ -162,7 +161,6 @@ function createNewListOfTasks() {
 function saveTitleToLocalStorage(id) {
     let title = document.getElementById(id)
     let newId = id.replace('listTitle#', '')
-    console.log("XD")
     listsOfTasks[newId] = title.value
     localStorage.setItem("ListTitles", JSON.stringify(listsOfTasks))
     document.getElementById("added-list-of-tasks").innerHTML = ""
@@ -172,8 +170,6 @@ function saveTitleToLocalStorage(id) {
 
 function changeCurrentList(id) {
     currentListId = id.replace('listTitle#', '')
-    // document.getElementById("added-list-of-tasks").innerHTML = ""
-    // displayListOfTodoLists()
     currentListName = "Todo " + currentListId.toString()
     todoTasks = []
     document.getElementsByClassName("tasks-titles")[0].innerHTML = ""
@@ -221,7 +217,6 @@ function addNewListBtn() {
 
     if (listsOfTasks.length !== 0) {
         let newListName = "Todo " + (listsOfTasks.length - 1).toString()
-        console.log(listsOfTasks)
         localStorage.setItem(newListName, JSON.stringify([]))
     }
 }

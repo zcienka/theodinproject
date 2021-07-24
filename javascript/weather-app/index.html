@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!--<i class="far fa-sun" id="clear-sky-icon"></i>-->
+<!--<i class="fas fa-cloud-sun" id="few-clouds-icon"></i>-->
+<!--<i class="fas fa-cloud fa-2x" id="broken-clouds-icon"></i>-->
+<!--<img src="img/scattered-clouds-icon.png" id="scattered-clouds-icon">-->
+<!--<i class="fas fa-cloud-rain" id="shower-rain"></i>-->
+<!--<i class="fas fa-cloud-sun-rain" id="rain-icon"></i>-->
+<!--<i class="fas fa-bolt" id="thunderstorm-icon"></i>-->
+<!--<i class="fas fa-snowflake" id="snow-icon"></i>-->
+<!--<img src="img/mist-icon.png" id="mist-icon">-->
+
+
+<div class="content">
+    <div class="upper-content">
+        <div class="hour-and-weekday">
+            <div class="container">
+                <h1 id="hour"></h1>
+                <h2 id="date"></h2>
+            </div>
+        </div>
+        <div class="temperature">
+            <div id="todays-temperature-icon"></div>
+            <h1 id="city"></h1>
+            <h2 id="todays-temperature"></h2>
+        </div>
+    </div>
+</div>
+
+<div class="search-bar-container">
+    <input type="text" id="search-bar" placeholder="Enter a city">
+</div>
+
+<div class="weekly_temperature">
+    <div class="container">
+        <div id="weekdays"></div>
+    </div>
+</div>
+
+<script
+        src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"
+        data-auto-a11y="true"
+></script>
+<script src="index.js"></script>
+</body>
+</html>
