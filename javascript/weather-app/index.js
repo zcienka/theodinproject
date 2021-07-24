@@ -1,8 +1,7 @@
 // const img = document.querySelector('img');
 const API_KEY = "a5fbe77f9cc630d2e546988104c04d85"
-// api.openweathermap.org/data/2.5/forecast/daily?q={city name}&cnt={cnt}&appid={API key}
 async function displayTodaysTemperature(city) {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}`)
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}`)
     const weatherData = await response.json()
     let weather = weatherData.list[0].weather[0]["main"]
     let weatherDescription = weatherData.list[0].weather[0]["description"]
